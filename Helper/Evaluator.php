@@ -579,7 +579,8 @@ class Evaluator extends \Magento\Framework\App\Helper\AbstractHelper
                 // Operator **=
                 // Introduced in PHP 5.6
                 return $this->evalAssignOp($expr, function ($left, $right) {
-                    return $left ** $right;
+                    //return $left ** $right;
+                    return POW($left, $right);
                 });
 
             // String Operators
